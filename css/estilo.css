@@ -1,0 +1,288 @@
+:root {
+    --cor0: #005250;
+    --cor1: #00D656;
+    --corback: #266161;
+    --corletra: aliceblue;
+
+    --fonte-padrão: Josefin Sans, sans-serif;
+    --fonte-destaque: Playfair Display, Recursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: var(--fonte-padrão);
+}
+
+p{
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+header  {
+    background-color: #01413f;
+    font-family: 'Playfair Display';
+    min-height: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header > h1{
+    color: #00D656;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header > p {
+    font-family: var(--fonte-padrão);
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    background-color: #01413f;
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--fonte-padrão);
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+nav > a {
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;;    
+}
+
+nav > a:hover{
+    background-color: #00D656 ;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: #005250;
+    font-family: var(--fonte-destaque);
+    font-size: 1.7em;
+}
+
+main h2 {
+    color: #005250;
+    font-family: var(--fonte-destaque);
+}
+
+main h3 {
+    color: #005250;
+    font-family: var(--fonte-destaque);
+    font-size: 1.7em;
+    text-align: left;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+main b{
+    color:#005250;
+    font-weight: bold;
+    font-weight: normal;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    background-color: #01413f;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #005250;
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    margin: 0px -20px 30px -20px;
+    padding: 10px;
+    padding-bottom: 50%;
+    position: relative;
+    align-items: center;
+}
+
+div.video >iframe{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 100%;
+    height: 100%;
+}
+
+legend{
+    text-align: center;
+}
+
+.foto1__biografia{
+    height: 30%;
+    width: 50%;
+    max-width: 600px;
+    min-width: 40px;
+    display: flex;
+}
+
+.foto3__biografia{
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    min-width: 40px;
+    display: flex;
+}
+
+.foto4__biografia{
+    height: 15%;
+    width: 25%;
+    max-width: 600px;
+    min-width: 40px;
+    display: flex;
+}
+
+.foto__descobertas{
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    min-width: 40px;
+    display: flex;
+    top: 5%;
+}
+
+.foto__instituto{
+    height: 30%;
+    width: 50%;
+    max-width: 600px;
+    min-width: 40px;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.foto__raioX{
+    height: 30%;
+    width: 50%;
+    max-width: 600px;
+    min-width: 40px;
+    display: flex;
+}
+.foto__radiografia{
+    height: 30%;
+    width: 40%;
+    max-width: 600px;
+    min-width: 40px;
+    display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+
+
+
+section {
+height: 40vh;
+   font-family: 'Josefin Sans', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: 0;
+   overflow: hidden;
+}
+
+h1{
+   font-weight: normal;
+   font-size: 30px;
+   font-weight: bold;
+   color: #005250;
+}
+
+.countdown {
+   display: flex;
+   transform: scale(2);
+}
+
+.time {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 30px;
+}
+
+.time h2{
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 1;
+   margin: 0 0 5px;
+}
+
+@media(max-widht:500px) {
+   h1 {
+       font-size: 20px;
+   }
+
+   .time {
+       margin:5px
+   }
+
+   .time h2 {
+       font-size: 12px;
+   }
+   .time small {
+       font-size: 10px;
+   }
+}
+
+footer {
+    background-color: var(--cor1);
+    color: aliceblue;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 5px;
+    align-items: center;
+}
+
